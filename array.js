@@ -76,7 +76,10 @@ for(let i=0;i<arr4.length;i++){
 console.log("Duplicate Numbers:",Duplicate) //Duplicate Numbers: (2) [1, 5]
 
 //To find largest number and duplicate numbers in the array
-let ar=[10,20,5,60,1,10,25];
+let ar=[10,20,5,60,1,10,25,5];
+
+//Remove duplicate values using spread operator(...) 
+console.log([...new Set(ar)]); //[10, 20, 5, 60, 1, 25]
 
 let Largest = ar[0];
 let duplicate = [];
@@ -110,10 +113,17 @@ for(let i=0;i<ar.length;i++){
 console.log("Largest Number:",Largest); //Largest Number: 60
 console.log("Duplicate Number:",duplicate); //Duplicate Number: [10]
 
+let fruits= ['mango','apple','banana'];
+for(let fruit of fruits){
+    console.log(fruit +' '+"is good for Health");
+    
+} //Gets o/p with each fruit name along with the text 
 
-
-
-
+let message = 'Good morning';
+for(let i of message){
+    console.log(i);
+    
+} //Gets o/p one by one letter
 
 
 

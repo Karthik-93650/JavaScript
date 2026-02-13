@@ -125,6 +125,8 @@ for(let i of message){
     
 } //Gets o/p one by one letter
 
+//Take array and reorder in ascending order and subsets of these arrays
+
 
 
 
